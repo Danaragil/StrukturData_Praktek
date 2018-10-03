@@ -1,0 +1,20 @@
+#include <iostream>
+#include <stdio>
+#include <conio>
+
+int main() {
+            float a[100], rata, jumlah = 0;
+            int j, i;
+            cout <<"Masukkan Jumlah Nilai Yang Ingin Dihiung : ";cin>>j;
+            cout<<"--------------------"<<endl;
+            for(i=1;i<=j;i++){
+            cout<<" Nilai ke-"<<i<<" = ";cin >>a[j];
+            jumlah=jumlah+a[j];
+            rata= jumlah/j;
+            cout<<endl;
+            }
+            cout<<"--------------------"<<endl;
+            cout<<"Nilai Rata-Rata = "<<rata;
+            cout<<endl;
+getch();
+}
