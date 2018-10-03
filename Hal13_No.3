@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio>
+#include <string>
+
+int main(){
+	char kata[100];
+	int i,a,kt;
+	cout<<"Masukan suatu kata = ";cin>>kata;
+	kt=strlen(kata);
+   cout<<endl;
+   cout<<"Keluaran : "<<endl;{
+	 for(i=kt;i>=0;i--){
+		for(a=0;a<i;a++){
+			cout<<kata[a];
+			}
+         cout<<endl;
+		}
+   }
+   getch();
+}
