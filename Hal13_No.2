@@ -1,0 +1,25 @@
+#include <iostream>
+#include <stdio>
+#include <conio>
+#include <math.h>
+
+int main() {
+            float rata,varian,stadev;
+            int j,i,x,a[100],jumlah=0,xi2=0;
+            cout <<"Masukkan Jumlah Nilai Yang Ingin Dihiung : ";cin>>j;
+            cout<<"--------------------"<<endl;
+            for(i=1;i<=j;i++){
+            	cout<<" Nilai ke-"<<i<<" = ";cin>>a[j];
+            	jumlah=jumlah+a[j];
+               xi2=xi2+pow(a[j],2);
+            rata=jumlah/j;
+            x=pow(jumlah,2);
+            varian=(j*xi2-x)/(j*(j-1));
+            stadev=sqrt(varian);
+            }
+            cout<<"--------------------"<<endl;
+            cout<<"Nilai Rata-Rata 	= "<<rata<<endl;
+            cout<<"Nilai Varian		= "<<varian<<endl;
+            cout<<"Standar Deviasi		= "<<stadev<<endl;
+getch();
+}
